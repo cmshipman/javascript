@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to call a function with arguments</p>
+<!--arguments are the values within a function-->
+<!--declares the arguments (as variables) as the function is declared-->
+<button onclick="myFunction(' Harry Potter','Wizard')">Try it</button>
+<button onclick="myFunction(' George Washington','President')">Now this one</button> 
+
+<script>
+function myFunction(name,job)
+{
+alert("Welcome" + name + ", the " + job);
+}
+</script>
+
+<br>
+<br>
+
+<p>4x6=?</p>
+<!--does not declare the arguments wintin the function-->
+<button onclick="myFunction1()">the answer</button>
+
+<script>
+//creates an alert box for when the button is clicked
+function myFunction1()
+{
+alert("24")
+}
+</script>
+
+<br>
+<br>
+
+<p> click the button to calculate 10 + 7</p>
+<!--creates a button that will activate the function when its clicked-->
+<button onclick="myFunction2()">calculate!</button>
+<!--names the paragraph-->
+<p id="demo"></p>
+
+<script>
+//creates the function with the different variables
+function myFunction2()
+{
+ y=10;
+ z=7;
+ x=y+z;
+//uses the returnvalue without storing it as a variable
+//innerHTML of the "demo" element will be 17, which is what the function "myFunction()" returns
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+<br>
+
+<p>adding string variables together</p>
+<!--creates the button and names the paragraph-->
+<button onclick="myFunction3()">try it</button>
+<p id="nemo"></p>
+
+<script>
+//creates a function and names the string variables
+function myFunction3()
+{
+txt1="There's ";
+txt2="no crying ";
+txt3="in baseball! ";
+txt4="-Tom Hanks in A League of Their Own"
+txt5=txt1+txt2+txt3+txt4;
+//same as above
+document.getElementById("nemo").innerHTML=txt5;
+}
+
+//all of these functions work separately but not when they are put on the same page--why?
+//possibly local vs global variables
+</script>
+
+</body>
+</html>
