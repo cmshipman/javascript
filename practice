@@ -71,8 +71,7 @@ txt5=txt1+txt2+txt3+txt4;
 document.getElementById("nemo").innerHTML=txt5;
 }
 
-//all of these functions work separately but not when they are put on the same page--why?
-//possibly local vs global variables
+
 </script>
 
 </body>
