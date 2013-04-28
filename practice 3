@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<h1> Practicing Basic Programming Skills with JavaScript </h1>
+
+<body>
+
+<p>input your age and then click the button to see if you are old enough to vote!</p>
+
+Age: <input id="age" value="?" />
+<p> Are you old enough to vote?</p>
+<button onclick="votingFunction()">Try it!</button>
+
+<!-- from w3schools.com: comparison operators can be used in conditional statements to 
+compare values and take action depending on the result -->
+
+<p id="voting"></p>
+
+<script>
+function votingFunction()
+  {
+		var age,voteable;
+		age=document.getElementById("age").value;
+		voteable=(age<18)? "you're not old enough!":"you're old enough to vote!";
+		document.getElementById("voting").innerHTML=voteable;
+		}
+	
+	</script>
+	
+</br>
+</br>
+</br>
+
+<p>do you know how old I am??</p>
+I am: <input id="myAge" value="" />
+<p> click the button to see if you're right!</p>
+<button onclick="myAgeFunction()">See if you're right!</button>
+<p id="Age"</p>
+
+<script>
+function myAgeFunction()
+	{
+		var myAge"";
+		if (Age==19) 
+		{
+		myAge="You know me so well!";
+		}
+		else
+		{
+		myAge="Dang you're terrible, how could you not know how old I am?"
+		}
+		document.getElementById("Age").innerHTML=myAge
+		</script>
+
+	</body>
+	</html>	
