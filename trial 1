@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<html>
+<h1>
+Practicing Variables in JavaScript
+</h1>
+
+<p id="variables">different variables</p>
+<script>
+//manipulates the HTML elements
+//"id" attribute identifies the HTML element
+document.getElementById("variables").innerHTML="x=2, y=4, then what does x+y, x-y, and y-x equal? ";
+
+// declares the different variables 
+var x=2;
+var y=4;
+var z=x+y;
+var a=x-y;
+var b=y-x;
+var after="Math is fun!";
+
+// javaScript statements
+document.write(z + "<br>");
+document.write(a + "<br>");
+document.write(b + "<br>");
+document.write(after + "<br>");
+</script>
+<br>
+<br>
+
+<body>
+<!--creates a button-->
+<p>click the button</p>
+<button onclick="myFunction()">Do It!</button>
+
+<p id="demo"></p>
+
+<script>
+//creates the variables function for when the button is clicked
+function myFunction()
+{
+var myname="Caitlin the Great";
+document.getElementbyId("demo").innerHTML=myname;
+}
+//the code above worked on w3schools.com "try it editor" but does not work on MAMMP, why?
+</script>
+
+</body>
+</html>
