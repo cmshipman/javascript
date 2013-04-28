@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to call a function with arguments</p>
+<!--arguments are the values within a function-->
+<!--declares the arguments (as variables) as the function is declared-->
+<button onclick="myFunction(' Harry Potter','Wizard')">Try it</button>
+<button onclick="myFunction(' George Washington','President')">Now this one</button> 
+
+<script>
+var myVar=myFunction(name,job)
+{
+alert("Welcome" + name + ", the " + job);
+}
+</script>
+
+</body>
+</html>
